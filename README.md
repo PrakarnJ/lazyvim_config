@@ -10,5 +10,6 @@ git clone git@github.com:PrakarnJ/lazyvim_config.git ~/.config/nvim
 ```
 Set up Clang format
 ```sh
+cd ~/.config/nvim
 ~/.local/share/nvim/mason/bin/clang-format -style=file:.clang_format --dump-config > ~/.clang-format
 ```

@@ -12,4 +12,13 @@ Set up Clang format
 ```sh
 cd ~/.config/nvim
 ~/.local/share/nvim/mason/bin/clang-format -style=file:.clang_format --dump-config > ~/.clang-format
+
+```
+Tmux config
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+Tmux source (copy .tmux.conf into /home/NAME/)
+```sh
+tmux source ~/.tmux.conf
 ```

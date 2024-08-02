@@ -1,0 +1,31 @@
+return {
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "stylua",
+        "shellcheck",
+        "shfmt",
+        "flake8",
+        "autopep8",
+        "clangd",
+        "clang-format",
+        "cmake-language-server",
+        "cmakelang",
+        "cmakelint",
+        "codelldb",
+        "codespell",
+        "cortex-debug",
+        "cpplint",
+        "cpptools",
+        "json-lsp",
+        "lua-language-server",
+        "pylint",
+        "pyright",
+        "sonarlint-language-server",
+        "vtsls",
+        "actionlint",
+      },
+    },
+  },
+}

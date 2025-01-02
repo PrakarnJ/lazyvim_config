@@ -29,6 +29,7 @@ mkdir -p cmake/build
 cd cmake/build
 cmake ../.. -DMAKE_EXPORT_COMPILE_COMMANDS=ON
 ```
+You should see it in the cmake/build directory. You can copy or symlink it to your project root if needed.
 
 ## Additional Setup
 

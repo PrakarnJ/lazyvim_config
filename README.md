@@ -22,6 +22,13 @@ Tmux source (copy .tmux.conf into /home/NAME/)
 ```sh
 tmux source ~/.tmux.conf
 ```
+Generate compile_command.json
+```sh
+cd YOUR_CPP_PROJ
+mkdir -p cmake/build
+cd cmake/build
+cmake ../.. -DMAKE_EXPORT_COMPILE_COMMANDS=ON
+```
 
 ## Additional Setup
 

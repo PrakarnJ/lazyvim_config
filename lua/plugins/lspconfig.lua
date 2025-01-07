@@ -38,14 +38,13 @@ return {
             completeUnimported = true,
             clangdFileStatus = true,
           },
+          filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "hpp" },
         },
-      },
-      setup = {
-        clangd = function(_, opts)
-          local clangd_ext_opts = LazyVim.opts("clangd_extensions.nvim")
-          require("clangd_extensions").setup(vim.tbl_deep_extend("force", clangd_ext_opts or {}, { server = opts }))
-          return false
-        end,
+        python = {
+          -- Replace this path with the path to the Python binary
+          -- in the virtual environment where you've installed grpcio.
+          pythonPath = "/path/to/your/venv/bin/python",
+        },
       },
     },
   },

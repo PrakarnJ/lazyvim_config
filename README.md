@@ -50,3 +50,23 @@ Python comes with an ensurepip, which can install pip in a Python environment.
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
+
+## Terminal config [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
+```
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+```
+plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+)
+```
+Install P10k [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+```

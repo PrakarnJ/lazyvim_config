@@ -27,7 +27,7 @@ return {
         "actionlint",
         "protolint",
         "protols",
-        "bufls",
+        --"bufls",
       },
     },
   },

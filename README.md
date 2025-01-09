@@ -14,7 +14,7 @@ cd ~/.config/nvim
 ~/.local/share/nvim/mason/bin/clang-format -style=file:.clang_format --dump-config > ~/.clang-format
 
 ```
-Tmux config
+Tmux config (update with ctrl+a, shift+i)
 ```sh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```

@@ -40,11 +40,7 @@ return {
           },
           filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "hpp" },
         },
-        python = {
-          -- Replace this path with the path to the Python binary
-          -- in the virtual environment where you've installed grpcio.
-          pythonPath = "/Users/prakarnj/grpc_ws/src/grpc_test/grpc_client/venv/lib/python3.13/site-packages/",
-        },
+        rust_analyzer = { enabled = false },
       },
     },
   },

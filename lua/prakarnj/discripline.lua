@@ -12,7 +12,7 @@ function M.cowboy()
       if vim.v.count > 0 then
         count = 0
       end
-      if count >= 30 then
+      if count >= 50 then
         ok, id = pcall(vim.notify, "Hold it Prakarn J.!", vim.log.levels.WARN, {
           icon = "🤠",
           replace = id,

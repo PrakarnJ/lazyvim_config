@@ -1,3 +1,4 @@
+# Existing rules
 tt.*
 .tests
 doc/tags
@@ -6,3 +7,16 @@ debug
 foo.*
 *.log
 data
+
+# macOS
+.DS_Store
+
+# Neovim session, swap, backup, and undo files
+*.swp
+*.swo
+*~
+.undo/
+Session.vim
+
+# Local config
+.neoconf.json

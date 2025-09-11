@@ -49,3 +49,8 @@ keymap.set("i", "kj", "<Esc>", opts)
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
+
+--dashboard
+keymap.set("n", "<leader>dd", function()
+  require("snacks.dashboard").open()
+end, { desc = "Open Dashboard" })

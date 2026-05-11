@@ -1,14 +1,11 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-    config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = "all",
-        highlight = { enable = true },
-      })
-    end,
+    build = ":TSUpdate",
+    opts = {
+      ensure_installed = { "lua", "python", "javascript", "typescript", "bash", "json", "yaml", "markdown", "vim", "vimdoc" },
+      highlight = { enable = true },
+    },
   },
-  { "nvim-treesitter/nvim-treesitter-refactor" },
-  { "nvim-treesitter/nvim-treesitter-textobjects" },
+{ "nvim-treesitter/nvim-treesitter-textobjects" },
 }

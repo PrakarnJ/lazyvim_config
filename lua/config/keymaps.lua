@@ -54,3 +54,8 @@ end, opts)
 keymap.set("n", "<leader>dd", function()
   require("snacks.dashboard").open()
 end, { desc = "Open Dashboard" })
+
+-- Open the current HTML file in the default browser using <leader>fx
+vim.keymap.set("n", "<leader>fx", function()
+  vim.ui.open(vim.fn.expand("%"))
+end, { desc = "Open HTML file in browser" })
